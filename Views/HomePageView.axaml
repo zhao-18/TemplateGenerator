@@ -1,0 +1,13 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:TemplateGenerator.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TemplateGenerator.Views.HomePageView"
+             x:DataType="vm:HomePageViewModel">
+  <StackPanel Margin="50" Spacing="20" Orientation="Vertical">
+    <Button Width="200" Height="120" Content="Create new" Command="{Binding InstantiateTemplateWindowCommand}" />
+    <Button Width="200" Height="120" Content="Install new template" Command="{Binding InstantiateInstallWindowCommand}" />
+  </StackPanel>
+</UserControl>
